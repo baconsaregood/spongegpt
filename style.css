@@ -1,40 +1,45 @@
-/* Basic reset */
-* {
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
-    color: #333;
-    text-align: center;
 }
 
 header {
-    background-color: #ffdd57;
+    background-color: #FFD700;
+    color: #333;
+    text-align: center;
     padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 2rem;
+    text-shadow: 2px 2px #FF4500;
 }
 
-h1 {
-    color: #00539f;
+nav {
+    background-color: #FF4500;
+    text-align: center;
+    padding: 10px;
 }
 
 nav a {
-    margin: 0 15px;
+    color: white;
     text-decoration: none;
-    color: #00539f;
-    font-size: 18px;
+    margin: 0 15px;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 main {
     padding: 20px;
 }
 
-#episodes {
-    margin-top: 30px;
+h2 {
+    text-align: center;
+    color: #FF4500;
+    text-shadow: 1px 1px #FFD700;
 }
 
 .video-grid {
@@ -45,49 +50,39 @@ main {
 }
 
 .video-container {
-    background-color: #e0f7fa;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out;
+    width: 45%;
+    background-color: white;
+    padding: 15px;
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
-.video-container:hover {
-    transform: scale(1.05);
-}
-
-.video-container iframe {
-    border-radius: 8px;
-    max-width: 100%;
+.video-container .thumbnail {
+    width: 100%;
     height: auto;
-}
-
-.video-container p {
-    margin-top: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #00796b;
+    margin-bottom: 10px;
 }
 
 .fullscreen-button {
-    display: inline-block;
-    margin-top: 5px;
-    padding: 8px 12px;
-    background-color: #00539f;
-    color: #fff;
+    display: block;
+    margin-top: 10px;
+    padding: 8px;
+    background-color: #FF4500;
+    color: white;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 14px;
 }
 
 .fullscreen-button:hover {
-    background-color: #004080;
+    background-color: #FF6347;
 }
 
 footer {
-    margin-top: 30px;
-    background-color: #00539f;
-    color: #fff;
-    padding: 10px;
-    font-size: 14px;
+    background-color: #FFD700;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
 }
